@@ -25,7 +25,7 @@ With Java 25 and Gradle available, run from the project directory:
 
 Place `build/libs/minecraft-pedal-control-0.1.0.jar` in the Minecraft 26.2 Fabric instance's `mods` folder. Do not use the sources JAR.
 
-On first launch the mod creates `config/pedal-control.properties` in the instance directory. Close Minecraft, set `enabled=true` and restart. Existing configuration values override defaults: use `leftAxis=3`, `rightAxis=1`, and `pressedBelow=-0.5` for the tested G29. An old `diagnostics` entry is ignored and can be removed.
+On first launch the mod creates `config/pedal-control.properties` in the instance directory. Pedal control is enabled by default; no config edit is needed to enable it. To disable it, close Minecraft, set `enabled=false`, and restart. Existing configuration values override defaults: use `leftAxis=3`, `rightAxis=1`, and `pressedBelow=-0.5` for the tested G29. An old `diagnostics` entry is ignored and can be removed.
 
 ## Limitations
 
