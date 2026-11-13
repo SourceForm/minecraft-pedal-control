@@ -29,4 +29,4 @@ On first launch the mod creates `config/pedal-control.properties` in the instanc
 
 ## Limitations
 
-Axis mappings and polarity may differ on other setups. Disconnect and menu behavior have not been independently verified. There is no in-game calibration screen or enable toggle. Test changes in a safe world.
+Axis mappings and polarity may differ on other setups. There is no in-game calibration screen or enable toggle. Test changes in a safe world.
