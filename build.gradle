@@ -1,0 +1,11 @@
+plugins { id 'net.fabricmc.fabric-loom' version '1.17.21' }
+version = '0.1.0'
+group = 'dev.sourceform'
+base { archivesName = 'minecraft-pedal-control' }
+repositories { mavenCentral() }
+dependencies {
+    minecraft 'com.mojang:minecraft:26.2'
+    implementation 'net.fabricmc:fabric-loader:0.19.3'
+}
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
+java { withSourcesJar() }
