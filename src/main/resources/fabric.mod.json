@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"pedalcontrol","version":"0.1.0","name":"Pedal Control","environment":"client","entrypoints":{"client":["dev.sourceform.pedal.PedalControl"]},"mixins":["pedalcontrol.mixins.json"],"depends":{"fabricloader":">=0.19.3","minecraft":"~26.2","java":">=25"}}
