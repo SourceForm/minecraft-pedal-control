@@ -13,7 +13,7 @@ public final class PedalControl implements ClientModInitializer {
     private static boolean left, right;
     public void onInitializeClient() {
         Path path = FabricLoader.getInstance().getConfigDir().resolve("pedal-control.properties");
-        config.setProperty("enabled", "false");
+        config.setProperty("enabled", "true");
         config.setProperty("deviceNameContains", "G29");
         config.setProperty("leftAxis", "3");
         config.setProperty("rightAxis", "1");
@@ -21,7 +21,7 @@ public final class PedalControl implements ClientModInitializer {
         try {
             Files.createDirectories(path.getParent());
             if (Files.exists(path)) { try (InputStream in = Files.newInputStream(path)) { config.load(in); } }
-            else { try (OutputStream out = Files.newOutputStream(path)) { config.store(out, "Pedal Control: calibrate axes before enabling"); } }
+            else { try (OutputStream out = Files.newOutputStream(path)) { config.store(out, "Pedal Control settings"); } }
         } catch (IOException e) { System.err.println("Pedal Control config: " + e); }
     }
     public static boolean[] read() {
