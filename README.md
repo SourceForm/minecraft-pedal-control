@@ -6,7 +6,7 @@ A prototype Fabric client mod for using Logitech G29 pedals to move in Minecraft
 
 The first prototype compiled successfully with Gradle 9.8.2, Java 25, Fabric Loom 1.17.21, and Fabric Loader 0.19.3. The axis defaults were changed afterward; that change still needs a fresh build. Controller input, axis numbering and polarity, focus behavior, in-game loading, and disconnect handling have not yet been verified with the G29.
 
-The prototype source and generated JAR currently exist in the local workspace and **have not yet been uploaded to this repository**. The repository currently documents the project, not a complete downloadable build.
+The prototype source and build configuration are in this repository. A compiled JAR has not been published as a release.
 
 ## Intended controls
 
@@ -37,4 +37,4 @@ Test in a safe single-player world first. Incorrect axis indices or polarity can
 - Verify that GLFW reads the G29 while Minecraft is unfocused and that Minecraft continues processing input without a pause screen.
 - Verify actual movement, menu behavior, device disconnects and simultaneous input.
 - Add configurable press/release thresholds, a convenient enable toggle and clearer status.
-- Upload and version the source, then document a repeatable build and hardware test results.
+- Document a repeatable build and hardware test results.
