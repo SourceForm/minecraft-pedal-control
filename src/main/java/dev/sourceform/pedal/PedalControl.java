@@ -15,8 +15,8 @@ public final class PedalControl implements ClientModInitializer {
         Path path = FabricLoader.getInstance().getConfigDir().resolve("pedal-control.properties");
         config.setProperty("enabled", "false");
         config.setProperty("deviceNameContains", "G29");
-        config.setProperty("leftAxis", "4");
-        config.setProperty("rightAxis", "2");
+        config.setProperty("leftAxis", "3");
+        config.setProperty("rightAxis", "1");
         config.setProperty("pressedBelow", "-0.5");
         try {
             Files.createDirectories(path.getParent());
